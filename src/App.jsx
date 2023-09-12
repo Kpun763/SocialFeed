@@ -9,6 +9,12 @@ function App() {
       name: 'Kyle',
       body: "Goodmorning everyone!",
       liked: false,
+    },
+    {
+      id: 2,
+      name: 'James',
+      body: "Did any catch the Monday night game last night? What a way to win in OT!",
+      liked: true,
     }
   ];
 
