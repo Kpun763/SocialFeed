@@ -1,3 +1,6 @@
+import React, {useState} from "react";
+
+
 const NewPostForm = ({onAddPost}) => {
     const [newPost, setNewPost] = useState({name: '', body: ''});
     const handleChange = (e) => {
