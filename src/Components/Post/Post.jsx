@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import "./Post.css";
 
 const Post = ({post}) => {
     const [liked, setLiked] = useState(post.liked);

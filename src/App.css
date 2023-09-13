@@ -1,7 +1,15 @@
 body {
-    background-color: lightcyan;
+    background-color: rgb(217, 234, 234);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 1em;
+    
+}
+

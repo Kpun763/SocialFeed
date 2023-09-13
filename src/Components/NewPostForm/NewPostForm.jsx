@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./NewPostForm.css";
 
 const NewPostForm = ({ onAddPost }) => {
   const [newPost, setNewPost] = useState({ name: "", body: "" });
@@ -13,13 +14,12 @@ const NewPostForm = ({ onAddPost }) => {
   };
 
   return (
-    <div>
+    <div className="text-field">
       <h2>Add New Post</h2>
       <form onSubmit={handleSubmit}>
         <label>
           Name:
           <input
-            type="text"
             name="name"
             value={newPost.name}
             onChange={handleChange}

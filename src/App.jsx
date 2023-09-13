@@ -1,22 +1,23 @@
 import "./App.css";
 import Header from "./Components/Header/Header";
-import PostList from './Components/PostList/PostList'
+import PostList from "./Components/PostList/PostList";
 import NewPostForm from "./Components/NewPostForm/NewPostForm";
+
 
 function App() {
   const posts = [
     {
       id: 1,
-      name: 'Kyle',
+      name: "Kyle",
       body: "Goodmorning everyone!",
       liked: false,
     },
     {
       id: 2,
-      name: 'James',
+      name: "James",
       body: "Did anyone catch the Monday night game last night? What a way to win in OT!",
-      liked: true,
-    }
+      liked: false,
+    },
   ];
 
   const addPost = (newPost) => {
@@ -24,13 +25,14 @@ function App() {
     posts.push(newPost);
   };
 
-
   return (
     <div className="App">
       <Header />
-      <NewPostForm onAddPost={addPost}/>
-      <h1>My Post Feed</h1>
-      <PostList posts={posts} />
+      <div>
+        <NewPostForm onAddPost={addPost} />
+        <PostList posts={posts} />
+        
+      </div>
     </div>
   );
 }
